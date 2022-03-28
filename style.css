@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#background {
+    width: 100vw;
+    height: 30vh;
+    background: #000000 0% 0% no-repeat padding-box;
+    border: 1px solid indigo;
+    transform: skewY(3deg);
+    z-index: 0;
+}
+
+.sub-header {
+    display: flex;
+}
+
+.sub-header button {
+    z-index: 1;
+    margin: auto;
+    justify-content: space-evenly;
+    transform: skewY(-4deg);
+}
