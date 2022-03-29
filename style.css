@@ -4,22 +4,59 @@
     box-sizing: border-box;
 }
 
+.container {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "content content"
+    "capture capture"
+    "footer footer";
+}
+
 #background {
     width: 100vw;
     height: 30vh;
-    background: #000000 0% 0% no-repeat padding-box;
+    background: #000000;
     border: 1px solid indigo;
-    transform: skewY(3deg);
     z-index: 0;
 }
 
-.sub-header {
-    display: flex;
+.sub-header button {
+    padding: 10px;
+    z-index: 1;
+    text-align: center;
+    margin: auto;
 }
 
-.sub-header button {
-    z-index: 1;
+.main {
+    grid-area: main;
+    max-width: 600px;
+    margin: 3em;
+}
+
+.main h2 {
+    margin: 1em;
+}
+
+.aside-inputs {
+    grid-area: aside;
+}
+
+.products-content {
+    grid-area: content;
+}
+
+.products-content button {
     margin: auto;
-    justify-content: space-evenly;
-    transform: skewY(-4deg);
+}
+
+.email-cap {
+    grid-area: capture;
+    margin: auto;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #000000;
 }
