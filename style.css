@@ -4,29 +4,42 @@
     box-sizing: border-box;
 }
 
-.container {
-    display: grid;
-    grid-template-areas:
-    "header header"
-    "main aside"
-    "content content"
-    "capture capture"
-    "footer footer";
+header {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-color: #000000;
+    text-align: center;
+    color: aliceblue;
 }
 
-#background {
-    width: 100vw;
-    height: 30vh;
-    background: #000000;
-    border: 1px solid indigo;
-    z-index: 0;
+header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    clip-path: polygon(100% 0,0 100%,100% 100%);
+}
+
+.sub-header {
+    position: relative;
+    text-align: center;
+}
+
+.sub-header h2 {
+    font-size: 3em;
+}
+
+.sub-header p {
+    font-size: 1.1em;
 }
 
 .sub-header button {
     padding: 10px;
     z-index: 1;
-    text-align: center;
-    margin: auto;
 }
 
 .main {
