@@ -17,4 +17,9 @@
 <dt>
   <dl>Day 0</dl>
   <dd>Dei uma olhada no projeto ao todo e terminei colocando a estrutura inicial, header está posicionado mas os elementos estão com comportamentos errados</dd>
- </dt>
+</dt>
+
+<dt>
+  <dl>Day 1</dl>
+  <dd>Foquei em colocar todos os elementos HTML - no caso a maioria, já que falta os produtos da API e a devida definição dos formulários. Fiz a implementação do Grid tamplate, porém por conta de um bug no primeiro input voltei atrás e foquei em resolver o problema do background, minha intenção é resolver com o uso do clip-path </dd>
+</dt>
