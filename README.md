@@ -23,3 +23,8 @@
   <dl>Day 1</dl>
   <dd>Foquei em colocar todos os elementos HTML - no caso a maioria, já que falta os produtos da API e a devida definição dos formulários. Fiz a implementação do Grid tamplate, porém por conta de um bug no primeiro input voltei atrás e foquei em resolver o problema do background, minha intenção é resolver com o uso do clip-path </dd>
 </dt>
+
+<dt>
+  <dl>Day 2</dl>
+  <dd>Consegui resolver o style do background do header, e posicionei o footer, falta apenas o estilo adequado. O conteúdo principal está pré organizado, os inputs estão colocados e agora falta definir os fieldsets. Na sessão de produtos adicionei um texto placeholder que por algum motivo quebrou o width, mas esse problema já foi consertado. A esta altura pensei que já estaria trabalhando com o JS, mas o layout requer mais detalhes do que eu previ, e a parte de forms requer uma atenção especial também. </dd>
+</dt>
