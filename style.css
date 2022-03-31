@@ -66,11 +66,9 @@ header::before {
     padding: 5px;
 }
 
-
-
-
-.products-content {
-    width: 400vw;
+section {
+    text-align: center;
+    margin: 1em;
 }
 
 .email-cap {
