@@ -158,7 +158,7 @@ footer {
     align-items: center;
 }
 
-footer::after {
+footer::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -166,7 +166,7 @@ footer::after {
     width: 100%;
     height: 250px;
     background: #fff;
-    clip-path: polygon(5% 0,0 100%,0 0);
+    clip-path: polygon(50% 40%,0 100%,0 0);
 }
 
 .footer-bg {
