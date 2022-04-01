@@ -42,11 +42,16 @@ header::before {
 
 .sub-header p {
     font-size: 1.1em;
+    margin: 1em;
 }
 
 .sub-header button {
     padding: 10px;
     z-index: 1;
+    margin: 2.5em;
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
 }
 
 /* FORM PRINCIPAL */
@@ -110,8 +115,33 @@ section {
 
 .email-cap {
     margin: auto;
-    display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 80vw;
+    justify-content: space-around;
+}
+
+.email-cap span {
+    display: block;
+    margin: 2em;
+}
+
+.email-cap label {
+    display: block;
+}
+
+.email-cap input {
+    display: inline-block;
+    width: 30%;
+    height: 25px;
+}
+
+
+
+.email-cap button {
+    margin: 2em auto;
+    width: 25%;
+    height: 30px;
+    display: inline;
 }
 
 /* FOOTER */
