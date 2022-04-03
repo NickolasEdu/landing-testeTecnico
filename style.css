@@ -96,6 +96,10 @@ header::before {
     margin: 10px 0;
 }
 
+form ul li {
+    text-decoration: none;
+}
+
 .main .input-radio {
     display: inline;
     margin: 10px 5px;
