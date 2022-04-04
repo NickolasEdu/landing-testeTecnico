@@ -35,3 +35,10 @@
   <dt>Day 3</dt>
   <dd>Bom progresso hoje, faltam detalhes específicos do layout para serem resolvidos. O clip-path não está funcionando no footer como no header, preciso decidir em como fazer os inputs alinhados em linha com o label sobre eles e por as divisórias descritivas das sessões. Após isso é definir o mailchimp e fieldsets antes de partir para a validação e consumo da API.</dd>
 </dl>
+
+<dl>
+  <dt>Day 4-5</dt>
+  <dd>
+    De principio tive um atraso por ter que aprender a usar a plataforma do Mailchimp, fiz algumas definições mas ainda falta fazer funcionar. Para aproveitar o tempo que fiquei empacado, acabei fazendo algumas alterações no style para melhorar minha visibiidade do projeto.
+  </dd>
+</dl>
