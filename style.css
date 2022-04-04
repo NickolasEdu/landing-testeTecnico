@@ -5,13 +5,18 @@
     font-family: Helvetica, sans-serif;
 }
 
+
+body {
+    background-color: #000;
+    color: #fff;
+}
 /* HEADER */
 
 header {
     position: relative;
     width: 100%;
     height: 90vh;
-    background-color: #000000;
+    background-color: #0c8c4c;
     color: aliceblue;
     display: flex;
     justify-content: center;
@@ -25,7 +30,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 250px;
-    background: #fff;
+    background: #000;
     clip-path: polygon(0 5%,0 100%,100% 100%);
 }
 
@@ -180,8 +185,8 @@ footer {
     margin-top: 100px;
     position: relative;
     width: 100%;
-    height: 20vh;
-    background-color: #000000;
+    height: 50vh;
+    background-color: #0c8c4c;
     color: aliceblue;
     display: flex;
     justify-content: center;
@@ -191,12 +196,12 @@ footer {
 footer::before {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 23%;
     left: 0;
     width: 100%;
     height: 250px;
-    background: #fff;
-    clip-path: polygon(50% 40%,0 100%,0 0);
+    background: #000;
+    clip-path: polygon(50% 0,0 100%,0 0);
 }
 
 .footer-bg {
