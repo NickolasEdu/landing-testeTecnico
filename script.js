@@ -1,3 +1,5 @@
+// API
+
 const mainform = document.getElementById('mainForm')
 
 mainform.onsubmit = function(e) {
@@ -6,8 +8,9 @@ mainform.onsubmit = function(e) {
 
     const inputName = document.forms['mainForm']['userName']
     if (!inputName.value) {
-        alert('Name error')
+        inputName.classList.add('returnError')
     } else {
+        inputName.classList.remove('returnError')
         emailValidation()
     }
 }
@@ -20,6 +23,7 @@ function emailValidation() {
     if (!inputEmail.value) {
         inputEmail.classList.add('returnError')
     } else {
+        inputEmail.classList.remove('returnError')
         identifyValidation()
     }
 }
@@ -28,8 +32,9 @@ function identifyValidation() {
     const inputCPF = document.forms['mainForm']['userCPF']
     
     if (!inputCPF.value) {
-        alert('CPF Error') 
+        inputCPF.classList.add('returnError') 
     } else {
+        inputCPF.classList.remove('returnError')
         genderValidation()
     }
 }
