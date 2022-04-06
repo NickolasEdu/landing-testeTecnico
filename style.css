@@ -101,9 +101,9 @@ header::before {
     margin: 10px 0;
 }
 
-form ul li {
-    text-decoration: none;
-}
+/* input[type=radio] {
+    display: inline;
+} */
 
 .main .input-radio {
     display: inline;
@@ -160,13 +160,13 @@ h4 {
 
 h4::before,
 h4::after {
-    background-color: #000;
+    background-color: #fff;
     content: "";
     display: inline-block;
     height: 1px;
     position: relative;
     vertical-align: middle;
-    width: 50%;
+    width: 480px;
 }
 
 h4::before {
