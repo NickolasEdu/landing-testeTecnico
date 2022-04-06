@@ -18,8 +18,7 @@ function emailValidation() {
     const inputEmail = document.forms['mainForm']['userEmail']
     
     if (!inputEmail.value) {
-        // inputEmail.classList.add('Error')
-        alert('Email Error')
+        inputEmail.classList.add('returnError')
     } else {
         identifyValidation()
     }
