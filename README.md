@@ -42,3 +42,10 @@
     De principio tive um atraso por ter que aprender a usar a plataforma do Mailchimp, fiz algumas definições mas ainda falta fazer funcionar. Para aproveitar o tempo que fiquei empacado, acabei fazendo algumas alterações no style para melhorar minha visibiidade do projeto.
   </dd>
 </dl>
+
+<dl>
+  <dt>Day 6</dt>
+  <dd>
+    Depois de alguns contratempos aprendendo sobre Mailchimp e decidindo como iria fazer a integração com os dois fieldsets de formulário na página, resolvi dar uns passos para trás e revisar a proposta do projeto. Então eu acabei percebendo que a integração com o Mailchimp não faz parte desde teste - eu vi um repositório de um projeto parecido com o uso do Mailchimp e por algum motivo fiz uma correlação que não existia. Apesar do contratempo consegui fazer e maior parte da validção da página, até aqui validei os inputs principais, agora resta as opções do input radio, e por fim adicionar a resposta de erro visual antes de partir para o consumo da API.
+  </dd>
+</dl>
