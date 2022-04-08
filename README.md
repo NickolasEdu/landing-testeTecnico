@@ -49,3 +49,10 @@
     Depois de alguns contratempos aprendendo sobre Mailchimp e decidindo como iria fazer a integração com os dois fieldsets de formulário na página, resolvi dar uns passos para trás e revisar a proposta do projeto. Então eu acabei percebendo que a integração com o Mailchimp não faz parte desde teste - eu vi um repositório de um projeto parecido com o uso do Mailchimp e por algum motivo fiz uma correlação que não existia. Apesar do contratempo consegui fazer e maior parte da validção da página, até aqui validei os inputs principais, agora resta as opções do input radio, e por fim adicionar a resposta de erro visual antes de partir para o consumo da API.
   </dd>
 </dl>
+
+<dl>
+  <dt>Day 7-8</dt>
+  <dd>
+    Validação visual e retorno de sucesso para o usuários definidas, também resolvi o problema do checkbox do input radio. Agora falta zerar os valores do formulário assim que ele for concluído. Também comecei a fazer o consumo da API, tenho detalhes para resolver como o chamado para pesquisar os produtos e o conteúdo que irá aparecer antes da API ser carregada e em caso de não for possível carregar. Devo fazer isso antes de começar exibir o conteúdo em si.
+  </dd>
+</dl>
