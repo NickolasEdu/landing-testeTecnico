@@ -1,4 +1,21 @@
-// API
+const method = {
+    method: 'POST',
+    headers: {}
+}
+
+function loadProducts() {
+    fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1', method)
+    .then(apiOk())
+    .catch(apiError())
+}
+
+function apiOk() {
+    console.log('ok')
+}
+
+function apiError() {
+    console.log('error 404')
+}
 
 const mainform = document.getElementById('mainForm')
 
