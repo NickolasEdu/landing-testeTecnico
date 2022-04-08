@@ -65,12 +65,14 @@
                 <input type="number" class="main-input" name="userCPF" id="mainCpfInput">
                 
                 <div class="Rdio-styled">
-                    <input type="radio" value="Male" name="userMale">
-                    <label>Male</label>
-                    <input type="radio" value="Female" name="userFemale">
-                    <label>Female</label>
+                    <input type="radio" value="Male" name="userGender"><label>Male</label>
+                    <br>
+                    <input type="radio" value="Female" name="userGender"><label>Female</label>
                 </div>
                 <button type="submit">ENVIAR</button>
+                <br>
+                <span class="hidden" id="helperText">Preencha todos os campos!</span>
+                <span class="hidden" id="sucessText">Seus dados foram salvos com sucesso, obrigado!</span>
             </form>
         </aside>
 
