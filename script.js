@@ -3,19 +3,28 @@ const method = {
     headers: {}
 }
 
+
 function loadProducts() {
     fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1', method)
-    .then(apiOk())
-    .catch(apiError())
-}
+        .then(jsonTransform)
+        .then(dataDisplay)
+        .catch(dataError)
+    }
+    
+    function jsonTransform(response) {
+       return response.JSON()
+    }
 
-function apiOk() {
-    console.log('ok')
-}
-
-function apiError() {
+    function dataDisplay(data) {
+        console.log(data)
+    }
+    
+function dataError() {
     console.log('error 404')
 }
+
+
+loadProducts()
 
 const mainform = document.getElementById('mainForm')
 
