@@ -1,6 +1,7 @@
 const isLoading = document.getElementById('isLoading')
+const productsItem = document.getElementById('product-box')
 
-const loadProducts = () => {
+const itensProducts = () => {
     fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page1')
         .then(resTransform)
         .then(data => console.log(data))
@@ -8,7 +9,7 @@ const loadProducts = () => {
         .catch(dataError)
 }
 
-loadProducts()
+itensProducts()
 
 function resTransform(response) {
     return response.json()
@@ -16,6 +17,16 @@ function resTransform(response) {
 
 function alredyLoad() {
     isLoading.classList.add('loadingComplete')
+}
+
+function displayItens() {
+    for (const item of itensProducts) {
+        item = `
+            <img src="${itensProducts.image}">
+            <span>${itensProducts.name}</span>
+            <p>${itensProducts.description}</p>
+        `
+    }
 }
 
 function dataError() {

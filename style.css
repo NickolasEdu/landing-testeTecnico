@@ -150,6 +150,10 @@ section {
     display: none;
 }
 
+.product-box {
+    color: #fff;
+}
+
 .email-cap {
     margin: auto;
     flex-wrap: wrap;
