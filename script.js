@@ -1,30 +1,21 @@
-const method = {
-    method: 'POST',
-    headers: {}
-}
-
 const isLoading = document.getElementById('isLoading')
 
-function loadProducts() {
-    fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products', method)
-        .then(jsonTransform)
+const loadProducts = () => {
+    fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page1')
+        .then(resTransform)
+        .then(data => console.log(data))
         .then(alredyLoad)
-        .then(dataDisplay)
         .catch(dataError)
 }
 
 loadProducts()
 
+function resTransform(response) {
+    return response.json()
+}
+
 function alredyLoad() {
     isLoading.classList.add('loadingComplete')
-}
-
-function jsonTransform(response) {
-    return response.JSON()
-}
-
-function dataDisplay(data) {
-    console.log(data)
 }
 
 function dataError() {
