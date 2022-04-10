@@ -6,6 +6,7 @@ const itensProducts = () => {
         .then(resTransform)
         .then(data => console.log(data))
         .then(alredyLoad)
+        .then(displayItens)
         .catch(dataError)
 }
 
@@ -21,10 +22,10 @@ function alredyLoad() {
 
 function displayItens() {
     for (const item of itensProducts) {
-        item = `
-            <img src="${itensProducts.image}">
-            <span>${itensProducts.name}</span>
-            <p>${itensProducts.description}</p>
+        productsItem = `
+            <img src="${item.image}">
+            <span>${item.name}</span>
+            <p>${item.description}</p>
         `
     }
 }
