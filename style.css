@@ -130,6 +130,26 @@ section {
     margin: 1em;
 }
 
+.products-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.products-content img {
+    margin: auto;
+}
+
+.products-content button {
+    align-items: center;
+    width: 20%;
+    height: 30px;
+    margin: auto;
+}
+
+.loadingComplete {
+    display: none;
+}
+
 .email-cap {
     margin: auto;
     flex-wrap: wrap;

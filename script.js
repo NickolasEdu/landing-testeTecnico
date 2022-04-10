@@ -3,28 +3,35 @@ const method = {
     headers: {}
 }
 
+const isLoading = document.getElementById('isLoading')
 
 function loadProducts() {
-    fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1', method)
+    fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products', method)
         .then(jsonTransform)
+        .then(alredyLoad)
         .then(dataDisplay)
         .catch(dataError)
-    }
-    
-    function jsonTransform(response) {
-       return response.JSON()
-    }
+}
 
-    function dataDisplay(data) {
-        console.log(data)
-    }
-    
+loadProducts()
+
+function alredyLoad() {
+    isLoading.classList.add('loadingComplete')
+}
+
+function jsonTransform(response) {
+    return response.JSON()
+}
+
+function dataDisplay(data) {
+    console.log(data)
+}
+
 function dataError() {
     console.log('error 404')
 }
 
 
-loadProducts()
 
 const mainform = document.getElementById('mainForm')
 
@@ -52,7 +59,7 @@ mainform.onsubmit = function nameValidation(e) {
 
 
 function emailValidation() {
-     
+
     if (!inputEmail.value) {
         inputEmail.classList.add('returnError')
         errorText()
@@ -64,7 +71,7 @@ function emailValidation() {
 }
 
 function identifyValidation() {
-    
+
     if (!inputCPF.value) {
         inputCPF.classList.add('returnError')
         errorText()
