@@ -56,3 +56,10 @@
     Validação visual e retorno de sucesso para o usuários definidas, também resolvi o problema do checkbox do input radio. Agora falta zerar os valores do formulário assim que ele for concluído. Também comecei a fazer o consumo da API, tenho detalhes para resolver como o chamado para pesquisar os produtos e o conteúdo que irá aparecer antes da API ser carregada e em caso de não for possível carregar. Devo fazer isso antes de começar exibir o conteúdo em si.
   </dd>
 </dl>
+
+<dl>
+  <dt>Day 9</dt>
+  <dd>
+    Cadeia de promisses funcionando, porém ainda com problemas na apresentação dos dados. Provavelmente vou precisar buscar uma solução diferente, talvez o uso do aync await seja útil. O problema aqui é na comportamento das promises - *.then()* - pois na cadeia algo sempre precisa ser retornado para a próxima promisse, eu estou com problemas nessa execução.
+  </dd>
+</dl>
