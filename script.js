@@ -1,12 +1,12 @@
 const isLoading = document.getElementById('isLoading')
 const productsItem = document.getElementById('product-box')
+let page = 1
 
 const itensProducts = () => {
     fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page1')
         .then(resTransform)
         .then(data => console.log(data))
-        .then(alredyLoad)
-        .then(displayItens)
+        .then(loadProducts)
         .catch(dataError)
 }
 
@@ -16,19 +16,11 @@ function resTransform(response) {
     return response.json()
 }
 
-function alredyLoad() {
+function loadProducts() {
     isLoading.classList.add('loadingComplete')
+    console.log(itensProducts.name)
 }
 
-function displayItens() {
-    for (const item of itensProducts) {
-        productsItem = `
-            <img src="${item.image}">
-            <span>${item.name}</span>
-            <p>${item.description}</p>
-        `
-    }
-}
 
 function dataError() {
     console.log('error 404')
