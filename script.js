@@ -3,10 +3,18 @@ const productsItem = document.getElementById('product-box')
 let page = 1
 
 const itensProducts = () => {
-    fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page1')
+    fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page${page}`)
         .then(resTransform)
-        .then(data => console.log(data))
-        .then(loadProducts)
+        .then(data => data.forEach(product => {
+            
+        isLoading.classList.add('loadingComplete')
+
+        productsItem.innerHTML = `
+            <h1>${product.name}</h1>
+        `
+
+        return productsItem
+        }))
         .catch(dataError)
 }
 
@@ -15,12 +23,6 @@ itensProducts()
 function resTransform(response) {
     return response.json()
 }
-
-function loadProducts() {
-    isLoading.classList.add('loadingComplete')
-    console.log(itensProducts.name)
-}
-
 
 function dataError() {
     console.log('error 404')
