@@ -1,32 +1,25 @@
 const isLoading = document.getElementById('isLoading')
-const productsItem = document.getElementById('product-box')
 let page = 1
 
 const itensProducts = () => {
     fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page${page}`)
-        .then(resTransform)
-        .then(data => data.forEach(product => {
-            
-        isLoading.classList.add('loadingComplete')
+        .then(response => response.json())
+        .then(data => {
+            isLoading.classList.add('loadingComplete')
+            const productsItem = document.getElementById('product-box')
 
-        productsItem.innerHTML = `
-            <h1>${product.name}</h1>
-        `
+            const productsList = data.map(item => {
+                productsList = `
+                <h1>${this.name}</h1>
+                `
 
-        return productsItem
-        }))
-        .catch(dataError)
+                productsItem.innerHTML = productsList
+            });
+        })
+        .catch(console.error('Something Went Wrong'))
 }
 
 itensProducts()
-
-function resTransform(response) {
-    return response.json()
-}
-
-function dataError() {
-    console.log('error 404')
-}
 
 
 
