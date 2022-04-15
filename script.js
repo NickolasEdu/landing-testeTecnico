@@ -9,7 +9,7 @@ const setProductList = () => {
             console.log(data)
             const productsItem = document.getElementById('product-box')
 
-            const prods = data.map((item) => {
+            const productBoxes = data.map((item) => {
                 const div = document.createElement('div')
 
                 div.setAttribute('id', item.id)
@@ -19,7 +19,7 @@ const setProductList = () => {
                 productsItem.appendChild(div)
             });
 
-            prods()
+            productBoxes()
         })
         .catch(console.error('Something Went Wrong'))
 }
