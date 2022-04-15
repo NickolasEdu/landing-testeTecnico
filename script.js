@@ -1,25 +1,30 @@
 const isLoading = document.getElementById('isLoading')
 let page = 1
 
-const itensProducts = () => {
-    fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page${page}`)
+const setProductList = () => {
+    fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
         .then(response => response.json())
         .then(data => {
             isLoading.classList.add('loadingComplete')
+            console.log(data)
             const productsItem = document.getElementById('product-box')
 
-            const productsList = data.map(item => {
-                productsList = `
-                <h1>${this.name}</h1>
-                `
+            const prods = data.map((item) => {
+                const div = document.createElement('div')
 
-                productsItem.innerHTML = productsList
+                div.setAttribute('id', item.id)
+                div.innerHTML = `
+                <h1>${item.name}
+                `
+                productsItem.appendChild(div)
             });
+
+            prods()
         })
         .catch(console.error('Something Went Wrong'))
 }
 
-itensProducts()
+setProductList()
 
 
 
