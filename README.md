@@ -63,3 +63,10 @@
     Cadeia de promisses funcionando, porém ainda com problemas na apresentação dos dados. Provavelmente vou precisar buscar uma solução diferente, talvez o uso do aync await seja útil. O problema aqui é na comportamento das promises - *.then()* - pois na cadeia algo sempre precisa ser retornado para a próxima promisse, eu estou com problemas nessa execução.
   </dd>
 </dl>
+
+<dl>
+  <dt>Day 10-11</dt>
+  <dd>
+    Passei dois dias com um problema em conseguir usar os dados obtidos pela API, até enfim pedir ajuda e perceber que estava cometendo um erro de syntax no consumo da API. Resolvido agora só preciso fazer algumas modificações no HTML e CSS para fazer os estilos das caixas dos produtos, e para isso devo adicionar ou remover algumas classes. Resolvendo isso só preciso me certificar do consumo da next page da API.
+  </dd>
+</dl>
