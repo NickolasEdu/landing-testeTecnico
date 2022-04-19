@@ -7,14 +7,20 @@ const setProductList = () => {
         .then(data => {
             isLoading.classList.add('loadingComplete')
             console.log(data)
+
             const productsItem = document.getElementById('product-box')
 
-            const productBoxes = data.map((item) => {
+            data.products.map((item) => {
                 const div = document.createElement('div')
 
                 div.setAttribute('id', item.id)
                 div.innerHTML = `
-                <h1>${item.name}
+                <img src="${item.image}" alt="${item.name}">
+                <h1>${item.name}</h1>
+                <p>${item.description}</p>
+                <h3>De:${item.oldPrice}</h3>
+                <h2>Por:${item.price}</h2>
+                <button>Comprar</button>
                 `
                 productsItem.appendChild(div)
             });

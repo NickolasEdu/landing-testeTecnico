@@ -130,16 +130,19 @@ section {
     margin: 1em;
 }
 
-.products-content {
+#product-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 15px;
+    width: 40%;
 }
 
-.products-content img {
+#product-box img {
     margin: auto;
 }
 
-.products-content button {
+#product-box button {
+    flex-direction: column;
     align-items: center;
     width: 20%;
     height: 30px;
