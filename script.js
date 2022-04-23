@@ -6,26 +6,25 @@ const setProductList = () => {
         .then(response => response.json())
         .then(data => {
             isLoading.classList.add('loadingComplete')
-            console.log(data)
 
-            const productsItem = document.getElementById('product-box')
+            const productsItem = document.getElementById('product-section')
 
             data.products.map((item) => {
                 const div = document.createElement('div')
 
                 div.setAttribute('id', item.id)
+                div.classList.add('productBox')
+
                 div.innerHTML = `
-                <img src="${item.image}" alt="${item.name}">
-                <h1>${item.name}</h1>
-                <p>${item.description}</p>
-                <h3>De:${item.oldPrice}</h3>
-                <h2>Por:${item.price}</h2>
-                <button>Comprar</button>
+                    <img src="${item.image}" alt="${item.name}">
+                    <h1>${item.name}</h1>
+                    <p>${item.description}</p>
+                    <h3>De:${item.oldPrice}</h3>
+                    <h2>Por:${item.price}</h2>
+                    <button>Comprar</button>
                 `
                 productsItem.appendChild(div)
             });
-
-            productBoxes()
         })
         .catch(console.error('Something Went Wrong'))
 }

@@ -125,36 +125,25 @@ header::before {
     height: 40px;
 }
 
-section {
-    text-align: center;
-    margin: 1em;
+section img {
+    margin: auto;
 }
 
-#product-box {
+#product-section {
     display: flex;
     flex-direction: row;
-    margin: 15px;
-    width: 40%;
-}
-
-#product-box img {
-    margin: auto;
-}
-
-#product-box button {
-    flex-direction: column;
+    max-width: 200vw;
+    height: 400px;
+    background-color: aqua;
     align-items: center;
-    width: 20%;
-    height: 30px;
-    margin: auto;
+}
+
+.productBox {
+    width: 25vw;
 }
 
 .loadingComplete {
     display: none;
-}
-
-.product-box {
-    color: #fff;
 }
 
 .email-cap {
