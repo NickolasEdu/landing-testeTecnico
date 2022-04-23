@@ -53,11 +53,12 @@
                 <input type="text" class="main-input" name="userName" id="mainNameInput">
 
                 <label>Seu email:</label>
-                <input type="email" class="main-input" name="userEmail" id="mainEmailInput" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <input type="email" class="main-input" name="userEmail" id="mainEmailInput"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 
                 <label>CPF:</label>
                 <input type="number" class="main-input" name="userCPF" id="mainCpfInput">
-                
+
                 <div class="radioStyle">
                     <input type="radio" value="Male" name="userGender"><label class="firstRadio">Masculino</label>
                     <input type="radio" value="Female" name="userGender"><label>Feminino</label>
@@ -75,27 +76,29 @@
     <section id="product-section">
         <img src="./assets/loading.gif" alt="Carregando os produtos" id="isLoading">
     </section>
-    
-    <div>
+
+    <div class="moreProducts">
         <button>Ainda mais produtos aqui!</button>
     </div>
 
     <h4>Compartilhe a novidade</h4>
 
-    <section class="email-cap">
-        <span>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</span>
+    <section class="toFriend-email">
+        <span>
+            Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
+        </span>
 
-        <div class="input-name">
+        <div class="display-inputEmail">
             <label>Nome do seu amigo:</label>
             <input type="text">
-        </div>
-
-        <div class="input-email">
+    
             <label>Email do seu amigo:</label>
             <input type="email">
         </div>
 
-        <button>Enviar</button>
+        <button>
+            Enviar
+        </button>
     </section>
 
     <footer>
