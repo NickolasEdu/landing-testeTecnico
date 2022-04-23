@@ -101,6 +101,30 @@ header::before {
     margin: 10px 0;
 }
 
+.radioStyle {
+    display: flex;
+    flex-direction: row;
+}
+
+.radioStyle label {
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+.radioStyle .firstRadio {
+    margin-right: 8px;
+}
+
+.main button {
+    margin: 25px 0 0;
+    width: 80%;
+    height: 40px;
+}
+
+/* 
+    VALIDATION MESSAGE 
+*/
+
 .hidden {
     display: none;
 }
@@ -113,17 +137,10 @@ header::before {
     color: #0c8c4c;
 }
 
-.main .input-radio {
-    display: inline;
-    margin: 10px 5px;
-    font-size: larger;
-}
 
-.main button {
-    margin: 10px 0;
-    width: 80%;
-    height: 40px;
-}
+/* 
+    PRODUCTS SECTION 
+*/
 
 section img {
     margin: auto;
@@ -131,15 +148,17 @@ section img {
 
 #product-section {
     display: flex;
-    flex-direction: row;
-    max-width: 200vw;
-    height: 400px;
-    background-color: aqua;
-    align-items: center;
+    justify-content: center;
+}
+
+#product-section div {
+    width: 500px;
 }
 
 .productBox {
-    width: 25vw;
+    padding: 50px;
+
+    background-color: aqua;
 }
 
 .loadingComplete {
@@ -152,6 +171,10 @@ section img {
     width: 80vw;
     justify-content: space-around;
 }
+
+/* 
+    SEND EMAIL SECTION
+*/
 
 .email-cap span {
     display: block;
