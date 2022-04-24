@@ -151,18 +151,14 @@ section img {
 }
 
 #product-section {
+    width: 90%;
     display: flex;
-    justify-content: center;
-}
-
-#product-section div {
-    width: 500px;
+    flex-direction: row;
+    background-color: #ce1212;
 }
 
 .productBox {
     padding: 50px;
-
-    background-color: aqua;
 }
 
 .loadingComplete {

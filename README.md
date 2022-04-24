@@ -70,3 +70,10 @@
     Passei dois dias com um problema em conseguir usar os dados obtidos pela API, até enfim pedir ajuda e perceber que estava cometendo um erro de syntax no consumo da API. Resolvido agora só preciso fazer algumas modificações no HTML e CSS para fazer os estilos das caixas dos produtos, e para isso devo adicionar ou remover algumas classes. Resolvendo isso só preciso me certificar do consumo da next page da API.
   </dd>
 </dl>
+
+<dl>
+  <dt>Day 12</dt>
+  <dd>
+    Definidos os estilos das duas sessões de input, completando os estilos da versão web vou concluir a parte das funcionalidades antes de partir para os estilos mobile. Atualmente estou com um problema com a apresentação dos produtos na tela com um comportamento inesperado, resolvido isso vou partir para o evento que vai chamar a próxima página da API.
+  </dd>
+</dl>
