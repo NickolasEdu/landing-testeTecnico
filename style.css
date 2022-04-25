@@ -151,7 +151,7 @@ section img {
 }
 
 #product-section {
-    width: 90%;
+    max-width: 400px;
     display: flex;
     flex-direction: row;
     background-color: #ce1212;

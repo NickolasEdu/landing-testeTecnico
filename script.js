@@ -31,7 +31,11 @@ const setProductList = () => {
 
 setProductList()
 
+const moreButton = document.getElementById('moreProducts')
 
+moreButton.onclick = function() {
+    alert('ok')
+}
 
 const mainform = document.getElementById('mainForm')
 
