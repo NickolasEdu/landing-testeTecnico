@@ -1,8 +1,8 @@
 const isLoading = document.getElementById('isLoading')
-let page = 1
+let url = `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1`
 
 const setProductList = () => {
-    fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
+    fetch(url)
         .then(response => response.json())
         .then(data => {
             isLoading.classList.add('loadingComplete')
@@ -33,8 +33,9 @@ setProductList()
 
 const moreButton = document.getElementById('moreProducts')
 
-moreButton.onclick = function() {
-    alert('ok')
+moreButton.onclick = function(res) {
+    res.json()
+    console.log(res)
 }
 
 const mainform = document.getElementById('mainForm')

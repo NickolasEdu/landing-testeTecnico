@@ -150,15 +150,20 @@ section img {
     margin: auto;
 }
 
-#product-section {
-    max-width: 400px;
+
+.container-products {
+    max-width: 90%;
     display: flex;
     flex-direction: row;
-    background-color: #ce1212;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .productBox {
-    padding: 50px;
+    padding: 30px;
+    width: 250px;
+    height: 300px;
+    margin-top: 30px;
 }
 
 .loadingComplete {
