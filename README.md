@@ -77,3 +77,10 @@
     Definidos os estilos das duas sessões de input, completando os estilos da versão web vou concluir a parte das funcionalidades antes de partir para os estilos mobile. Atualmente estou com um problema com a apresentação dos produtos na tela com um comportamento inesperado, resolvido isso vou partir para o evento que vai chamar a próxima página da API.
   </dd>
 </dl>
+
+<dl>
+  <dt>Day 13-14</dt>
+  <dd>
+    Após travar novamente resolvi reorganizar o arquivo js, ajudou a clarear as ideias. Consegui um avanço no uso do evento de click, no qual já está me retornando a next page da API, falta apresentar na tela junto do conteúdo anterior. Após isso vou terminar os estilos CSS e dar uma última resivada no javascrip antes de considerar como terminado.
+  </dd>
+</dl>
