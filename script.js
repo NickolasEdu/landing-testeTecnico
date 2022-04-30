@@ -1,4 +1,8 @@
 const isLoading = document.getElementById('isLoading')
+const productsItem = document.getElementById('product-section')
+const moreButton = document.getElementById('showMoreProducts')
+const newResponse = []
+
 let url = `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1`
 
 const setProductList = () => {
@@ -7,15 +11,14 @@ const setProductList = () => {
         .then(data => {
             isLoading.classList.add('loadingComplete')
 
-            const productsItem = document.getElementById('product-section')
-
+            
             data.products.map((item) => {
                 const div = document.createElement('div')
 
                 div.setAttribute('id', item.id)
                 div.classList.add('productBox')
 
-                div.innerHTML = `
+                div.innerHTML += `
                     <img src="${item.image}" alt="${item.name}">
                     <h1>${item.name}</h1>
                     <p>${item.description}</p>
@@ -23,23 +26,22 @@ const setProductList = () => {
                     <h2>Por:${item.price}</h2>
                     <button>Comprar</button>
                 `
+
                 productsItem.appendChild(div)
             });
-        })
-        .catch(console.error('Something Went Wrong'))
-}
 
+            moreButton.onclick = function() {
+                console.log(data.nextPage)
+            }
+            
+        })
+    }
+    
 setProductList()
 
-const moreButton = document.getElementById('moreProducts')
 
-moreButton.onclick = function(res) {
-    res.json()
-    console.log(res)
-}
 
 const mainform = document.getElementById('mainForm')
-
 const inputName = document.forms['mainForm']['userName']
 const inputEmail = document.forms['mainForm']['userEmail']
 const inputCPF = document.forms['mainForm']['userCPF']
