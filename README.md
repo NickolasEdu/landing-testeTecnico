@@ -84,3 +84,10 @@
     Após travar novamente resolvi reorganizar o arquivo js, ajudou a clarear as ideias. Consegui um avanço no uso do evento de click, no qual já está me retornando a next page da API, falta apresentar na tela junto do conteúdo anterior. Após isso vou terminar os estilos CSS e dar uma última resivada no javascrip antes de considerar como terminado.
   </dd>
 </dl>
+
+<dl>
+  <dt>Day 15</dt>
+  <dd>
+    Consegui fazer o botão apresentar novos produtos, onde na realidade acabei apenas consumindo novamente os mesmos dados da API. Porém com esse retorno eu acabei identificando dois problemas no layout quando novos produtos são mostrados. Aproveitei para finalizar os estilos dos dados nas caixas de cada produto e resolvi os problemas de display. Agora novamente estou focado em fazer com que apresente os itens corretos na tela. Vou deixar para fazer a responsividade por último e ainda quero dar uma repassada no código do script. 
+  </dd>
+</dl>
