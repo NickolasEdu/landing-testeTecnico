@@ -153,7 +153,7 @@ section img {
 
 .container-products {
     max-width: 90%;
-    height: 950px;
+    min-height: 950px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -165,7 +165,7 @@ section img {
     padding: 25px;
     width: 250px;
     height: 300px;
-    margin: 30px auto;
+    margin: 4em auto;
 }
 
 .productBox img {
@@ -194,7 +194,7 @@ section img {
 .moreProducts {
     padding: 40px;
     text-align: center;
-    margin: 45px auto;
+    margin: 9em auto auto;
 }
 
 .moreProducts button {
