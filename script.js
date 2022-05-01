@@ -3,7 +3,8 @@ const productsItem = document.getElementById('product-section')
 const moreButton = document.getElementById('showMoreProducts')
 const newResponse = []
 
-let url = `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1`
+let url = `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${1}`
+let page = 1
 
 const setProductList = () => {
     fetch(url)
@@ -20,18 +21,21 @@ const setProductList = () => {
 
                 div.innerHTML += `
                     <img src="${item.image}" alt="${item.name}">
-                    <h1>${item.name}</h1>
+                    <h3>${item.name}</h3>
                     <p>${item.description}</p>
-                    <h3>De:${item.oldPrice}</h3>
-                    <h2>Por:${item.price}</h2>
+                    <h3>De: R$${item.oldPrice}</h3>
+                    <h2>Por: R$${item.price}</h2>
+                    <span>Ou 2x de R$${item.price/2}</span>
                     <button>Comprar</button>
                 `
 
                 productsItem.appendChild(div)
             });
 
+            // FINALMENTE UM PROGRESSO, ESTOU CONSEGUINDO IMPRIMIR APÓS O NEXTPAGE PELO CLICK. PORÉM ESTÁ IMPRIMINDO OS MESMOS ITEMS INICIAIS
+
             moreButton.onclick = function() {
-                console.log(data.nextPage)
+                page++
             }
             
         })
