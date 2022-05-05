@@ -1,49 +1,52 @@
 const isLoading = document.getElementById('isLoading')
 const productsItem = document.getElementById('product-section')
 const moreButton = document.getElementById('showMoreProducts')
-const newResponse = []
 
-let url = `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1`
+let page = 0
 
-const setProductList = () => {
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            isLoading.classList.add('loadingComplete')
+function getProductsList() {
+    page++
+    return fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
+        .then(jsonTransform)
+        .then(showProducts)
+}
 
-            
-            data.products.map((item) => {
-                const div = document.createElement('div')
+function jsonTransform(response) {
+    return response.json()
+}
 
-                div.setAttribute('id', item.id)
-                div.classList.add('productBox')
 
-                div.innerHTML += `
-                    <br>
+function showProducts(data) {
+
+
+    isLoading.classList.add('loadingComplete')
+
+
+    data.products.map((item) => {
+        const div = document.createElement('div')
+
+        div.setAttribute('id', item.id)
+        div.classList.add('productBox')
+
+        div.innerHTML += `
                     <img src="${item.image}" alt="${item.name}">
                     <h3>${item.name}</h3>
                     <p>${item.description}</p>
                     <h3>De: R$${item.oldPrice}</h3>
                     <h2>Por: R$${item.price}</h2>
-                    <span>Ou 2x de R$${item.price/2}</span>
+                    <span>Ou 2x de R$${item.price / 2}</span>
                     <button>Comprar</button>
-                    <br>
                 `
 
-                productsItem.appendChild(div)
-            });
+        productsItem.appendChild(div)
+    });
+}
 
-            // FINALMENTE UM PROGRESSO, ESTOU CONSEGUINDO IMPRIMIR APÓS O NEXTPAGE PELO CLICK. PORÉM ESTÁ IMPRIMINDO OS MESMOS ITEMS INICIAIS
+moreButton.onclick = function () {
+    getProductsList()
+}
 
-            moreButton.onclick = function() {
-                url += data.nextPage
-                setProductList()
-            }
-            
-        })
-    }
-    
-setProductList()
+getProductsList()
 
 
 
