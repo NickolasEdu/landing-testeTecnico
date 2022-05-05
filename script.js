@@ -9,6 +9,7 @@ function getProductsList() {
     return fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
         .then(jsonTransform)
         .then(showProducts)
+        .catch(showError)
 }
 
 function jsonTransform(response) {
@@ -48,7 +49,9 @@ moreButton.onclick = function () {
 
 getProductsList()
 
-
+function showError() {
+    console.error('This is not working')
+}
 
 const mainform = document.getElementById('mainForm')
 const inputName = document.forms['mainForm']['userName']

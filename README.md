@@ -91,3 +91,10 @@
     Consegui fazer o botão apresentar novos produtos, onde na realidade acabei apenas consumindo novamente os mesmos dados da API. Porém com esse retorno eu acabei identificando dois problemas no layout quando novos produtos são mostrados. Aproveitei para finalizar os estilos dos dados nas caixas de cada produto e resolvi os problemas de display. Agora novamente estou focado em fazer com que apresente os itens corretos na tela. Vou deixar para fazer a responsividade por último e ainda quero dar uma repassada no código do script. 
   </dd>
 </dl>
+
+<dl>
+  <dt>Days 16-17</dt>
+  <dd>
+    Passei os últimos dois dias focado em resolver a questão da paginação. Por fim deixei de lado em usar o 'nextPage', uma documentação sobre o uso teria ajudado. Voltei a atenção para a requisição pelo fetch e usar uma string literal para incrementar o valor das páginas através de uma variavél, de inicio não deu certo, tentei dividir a algumas partes da cadeia de promisses e em um momento fazer com que os dados do resultado fossem retornador para diferentes arrays onde pensei em usar o spread para contatenar cada página de items, porém acreditei que deixaria o código complicado, voltei a revisar um conteúdo de fetch e resolvi em voltar e separar a cadeia de promisses em funções o que achei um resultado mais satisfatório. Agora vou trabalhar a responsividade e concluir o layout antes de revisitar o código JS.
+  </dd>
+</dl>
