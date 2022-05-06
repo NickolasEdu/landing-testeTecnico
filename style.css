@@ -59,6 +59,7 @@ header::before {
     cursor: pointer;
 }
 
+
 /* FORM PRINCIPAL */
 
 .main {
@@ -122,7 +123,7 @@ header::before {
 }
 
 /* 
-    VALIDATION MESSAGE 
+VALIDATION MESSAGE 
 */
 
 .hidden {
@@ -143,10 +144,10 @@ header::before {
 
 
 /* 
-    PRODUCTS SECTION 
+PRODUCTS SECTION 
 */
 
-section img {
+#isLoading {
     margin: auto;
 }
 
@@ -294,4 +295,41 @@ footer::before {
     max-width: 100%;
     text-align: center;
     border: 0;
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* HEADER */
+    .sub-header .headerText {
+        text-align: left;
+    }
+
+    .sub-header .headerText span {
+        margin-left: 1em;
+    }
+
+    .sub-header .headerText h2 {
+        margin-left: 0.3em;
+    }
+
+    .headerButtons {
+        width: 98vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    /* CONTEÚDO */
+
+    .main {
+        display: block;
+        width: 400px;
+    }
+
+    .main article,
+    .main aside {
+        width: 430px;
+        margin: 10px 0;
+    }
+
 }
