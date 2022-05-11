@@ -297,7 +297,7 @@ footer::before {
     border: 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
     /* HEADER */
     .sub-header .headerText {
@@ -323,13 +323,42 @@ footer::before {
 
     .main {
         display: block;
-        width: 400px;
+        max-width: 400px;
+        margin: 0;
+    }
+
+    .main h2 {
+        width: 430px;
+        font-size: 1.4em;
     }
 
     .main article,
     .main aside {
-        width: 430px;
-        margin: 10px 0;
+        width: 85vw;
     }
 
+
+    #mainForm {
+        margin: -7%;
+    }
+
+    .main .main-input {
+        width: 95%;
+        margin: 5px 0;
+    }
+
+    .main button {
+        width: 95%;
+    }
+
+    .container-products {
+        margin: auto;
+        display: inline;
+        width: 100vw;
+        min-height: 900px;
+    }
+
+    .container-products img {
+        float: left;
+    }
 }
