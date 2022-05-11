@@ -30,13 +30,17 @@ function showProducts(data) {
         div.classList.add('productBox')
 
         div.innerHTML += `
+                    <div class="productImg">
                     <img src="${item.image}" alt="${item.name}">
+                    </div>
+                    <div class="productInfo">
                     <h3>${item.name}</h3>
                     <p>${item.description}</p>
                     <h3>De: R$${item.oldPrice}</h3>
                     <h2>Por: R$${item.price}</h2>
                     <span>Ou 2x de R$${item.price / 2}</span>
                     <button>Comprar</button>
+                    </div>
                 `
 
         productsItem.appendChild(div)
