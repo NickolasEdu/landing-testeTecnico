@@ -98,3 +98,10 @@
     Passei os últimos dois dias focado em resolver a questão da paginação. Por fim deixei de lado em usar o 'nextPage', uma documentação sobre o uso teria ajudado. Voltei a atenção para a requisição pelo fetch e usar uma string literal para incrementar o valor das páginas através de uma variavél, de inicio não deu certo, tentei dividir a algumas partes da cadeia de promisses e em um momento fazer com que os dados do resultado fossem retornador para diferentes arrays onde pensei em usar o spread para contatenar cada página de items, porém acreditei que deixaria o código complicado, voltei a revisar um conteúdo de fetch e resolvi em voltar e separar a cadeia de promisses em funções o que achei um resultado mais satisfatório. Agora vou trabalhar a responsividade e concluir o layout antes de revisitar o código JS.
   </dd>
 </dl>
+
+<dl>
+  <dt>Days 18-19</dt>
+  <dd>
+    Definindo os estilos responsivos, porém dei uma pausa no processo pois está dando uma incoerência com a ferramenta de simulação de dispositivo móvel e o meu smartphone, apresentendo estilos diferentes em algumas partes do projeto. No momento vou investigar isso antes de prosseguir.
+  </dd>
+</dl>
