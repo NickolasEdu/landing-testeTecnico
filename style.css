@@ -313,10 +313,17 @@ footer::before {
     }
 
     .headerButtons {
-        width: 96vw;
+        width: 100vw;
+        height: 250px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+    }
+
+    .headerButtons button {
+        width: 33%;
+        height: 50px;
+        border-radius: 8%;
     }
 
     /* CONTEÚDO */
