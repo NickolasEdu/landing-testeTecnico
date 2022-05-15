@@ -64,7 +64,7 @@ header::before {
 
 .main {
     max-width: 100vw;
-    margin: 1.5em 3em;
+    margin: auto;
     display: flex;
     justify-content: center;
 }
@@ -142,6 +142,18 @@ VALIDATION MESSAGE
     border: 3px solid #ce1212
 }
 
+h4::after,
+h4::before {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    height: 2px;
+    position: relative;
+    background-color: #fff;
+    color: #fff;
+    content: '';
+    margin: 10px;
+}
 
 /* 
 PRODUCTS SECTION 
@@ -176,11 +188,6 @@ PRODUCTS SECTION
 
 .productBox h3 {
     margin: 10px auto;
-}
-
-.productBox h4 {
-    margin: 10px auto;
-    text-align: left;
 }
 
 .productBox span {
@@ -224,7 +231,7 @@ section .toFriend-email {
 
 section span {
     display: block;
-    margin: 2em;
+    margin: 2em auto;
     text-align: center;
 }
 
@@ -251,7 +258,7 @@ section button {
     width: 25%;
     height: 30px;
     margin: 10px;
-    margin: auto    ;
+    margin: auto;
 }
 
 h4 {
@@ -259,62 +266,64 @@ h4 {
     text-align: center;
 }
 
-/* h4::before,
-h4::after {
-    background-color: #fff;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 100vw;
-}
-
-h4::before {
-    right: 0.5em;
-    margin-left: -50%;
-}
-
-h4::after {
-    left: 0.5em;
-    margin-right: -50%;
-} */
-
 /* FOOTER */
 
 footer {
-    margin-top: 100px;
     position: relative;
     width: 100vw;
-    height: 50vh;
+    height: 39vh;
     background-color: #0c8c4c;
     color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3em;
 }
 
 footer::before {
     content: '';
     position: absolute;
-    bottom: 23%;
     left: 0;
     width: 100vw;
-    height: 250px;
+    height: 255px;
     background: #000;
-    clip-path: polygon(50% 0,0 100%,0 0);
+    -webkit-clip-path: polygon(0 0, 0 53%, 100% 0);
 }
 
 .footer-bg {
     position: relative;
     max-width: 100vw;
     text-align: center;
-    border: 0;
+    margin: 0.1em;
+    font-size: 12px;
 }
 
 @media only screen and (max-width: 950px) {
 
     /* HEADER */
+
+    header {
+        position: relative;
+        width: 100vw;
+        height: 91vh;
+        background-color: #0c8c4c;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 256px;
+        background: #000;
+        clip-path: polygon(0 5%,0 100%,100% 100%);
+    }
+
     .sub-header .headerText {
         text-align: left;
     }
@@ -338,6 +347,7 @@ footer::before {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        margin: auto;
     }
 
     .headerButtons button {
@@ -355,25 +365,52 @@ footer::before {
     }
 
     .main h2 {
-        width: 100vw;
-        font-size: 1.4em;
+        width: 98vw;
+        font-size: auto;
     }
-
+    
     .main article,
     .main aside {
-        width: 95vw;
+        width: 100%;
     }
 
+    .main article {
+        font-size: 12px;
+        margin: auto;
+    }
+
+    .main aside {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+    }
 
     #mainForm {
-        margin: -7%;
-        max-width: 100vw;
+        width: 100%;
+        margin: 1em auto;
+    }
+
+    #mainForm label,
+    #mainForm .radioStyle {
+        margin-left: 0.7em;
+    }
+
+    #mainForm label,
+    #mainForm input {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    #mainForm button {
+        margin: 1em 1em;
     }
 
     .main .main-input {
-        width: 93%;
-        margin: 5px 0;
+        width: 95%;
+        margin: auto;
     }
+
+
 
     .main button {
         width: 93%;
@@ -391,7 +428,7 @@ footer::before {
         justify-content: flex-start;
         width: 100%;
         height: 40vh;
-        margin: auto;
+        margin: 0;
     }
 
     .productImg {
@@ -458,5 +495,37 @@ footer::before {
     .toFriend-email button {
         height: 39px;
         width: 70%;
+    }
+
+    /* FOOTER */
+
+    footer {
+        position: relative;
+        width: 100vw;
+        height: 33vh;
+        background-color: #0c8c4c;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3em;
+    }
+    
+    footer::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        height: 260px;
+        background: #000;
+        -webkit-clip-path: polygon(0 0, 0 53%, 100% 0);
+    }
+
+    .footer-bg {
+        position: relative;
+        max-width: 100vw;
+        text-align: center;
+        margin: 0.1em;
+        font-size: 12px;
     }
 }
