@@ -317,7 +317,6 @@ footer::before {
     /* HEADER */
     .sub-header .headerText {
         text-align: left;
-        border: 5px solid gold;
     }
 
     .sub-header .headerText span {
