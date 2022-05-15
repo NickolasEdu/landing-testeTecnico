@@ -36,7 +36,7 @@ function showProducts(data) {
                     <div class="productInfo">
                     <h3>${item.name}</h3>
                     <p>${item.description}</p>
-                    <h3>De: R$${item.oldPrice}</h3>
+                    <h4>De: R$${item.oldPrice}</h4>
                     <h2>Por: R$${item.price}</h2>
                     <span>Ou 2x de R$${item.price / 2}</span>
                     <button>Comprar</button>
