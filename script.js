@@ -66,9 +66,13 @@ const helperMenssage = document.getElementById('helperText')
 const sucessTxt = document.getElementById('sucessText')
 
 
-mainform.onsubmit = function nameValidation(e) {
+mainform.onsubmit = function mainFormValidation(e) {
 
     e.preventDefault()
+    nameValidation()
+}
+
+function nameValidation() {
 
     if (!inputName.value) {
         inputName.classList.add('returnError')
@@ -128,4 +132,39 @@ function defaultText() {
 function sucessText() {
     sucessTxt.classList.remove('hidden')
     sucessTxt.classList.add('sucess-text')
+    mainform.reset()
+}
+
+const toFriendForm = document.getElementById('toFriendEmail')
+const friendName = document.forms['toFriendEmail']['friendName']
+const friendEmail = document.forms['toFriendEmail']['friendEmail']
+
+toFriendForm.onsubmit = function toFriendValidation(e) {
+    e.preventDefault()
+    friendNameValidation()
+}
+
+function friendNameValidation() {
+    
+    if (!friendName.value) {
+        friendName.classList.add('returnError')
+    } else {
+        friendEmailValidation()
+        friendName.classList.remove('returnError')
+    }
+}
+
+function friendEmailValidation() {
+
+    if (!friendEmail.value) {
+        friendEmail.classList.add('returnError')
+    } else {
+        friendEmail.classList.remove('returnError')
+        toFriendSucess()
+    }
+}
+
+function toFriendSucess() {
+    toFriendForm.reset()
+    alert('Um email foi enviado para o seu amigo. Obrigado!')
 }
