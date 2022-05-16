@@ -105,3 +105,10 @@
     Definindo os estilos responsivos, porém dei uma pausa no processo pois está dando uma incoerência com a ferramenta de simulação de dispositivo móvel e o meu smartphone, apresentendo estilos diferentes em algumas partes do projeto. No momento vou investigar isso antes de prosseguir.
   </dd>
 </dl>
+
+<dl>
+  <dt>Days 20-21-22</dt>
+  <dd>
+    Usando o live server atravéns do celular consegui ser mais produtivo na responsividade, fiz alguns alinhamentos finais nos estilos do menu e caixas dos produtos. E final das contas o projeto está funcional, apesar de ainda existir pontos nele no qual queria mexer, o projeto está dentro do que foi pedido. Vou resumir um relato sobre o processo de desenolvimento e pedir feedbacks para poder direcionar melhor os meus estudos.
+  </dd>
+</dl>
