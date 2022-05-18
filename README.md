@@ -7,9 +7,7 @@
 </p>
 
 <p>
-  O teste original foram 3 dias de produção, baseado no meu tempo livre de estudo, entendi que deve ser uma média de 3 semanas.
-  Meu objetivo é terminar em até 7 dias, levando em condireação o tempo que uso para estudar no trabalho e colocar em prática o planejamento - com sete dias quero dizer
-  7 dias de commits, pois caso algum dos dias eu não consiga codar, não entrará na conta
+  O teste original foram 3 dias de produção, baseado no meu tempo livre de estudo, entendi que deve ser uma média de 3 semanas - no caso três semanas somando os dias de commit e não necessariamente dias corridos.
  </p>
  
  - [Mock layout](https://xd.adobe.com/spec/4025e242-a495-4594-71d2-5fd89d774b57-3614/specs/)
