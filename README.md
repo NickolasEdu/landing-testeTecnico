@@ -15,7 +15,24 @@
  - [Mock layout](https://xd.adobe.com/spec/4025e242-a495-4594-71d2-5fd89d774b57-3614/specs/)
  - [API endpoint](https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1)
 
+ ## Conclusão do projeto
 
+ <p>
+  Para desenvolver este projeto eu dei uma pausa no meu roteiro de estudos, mesmo sabendo que haveria necessidade de revisar alguns temas durante a produção, mas no geral me surpreendi com o meu progresso. Houveram 4 momentos onde eu travei, mas foram por motivos simples - como erro de syntax, problema com o feedback de responsividade - ou em momentos que tentei fazer mais do que era pedido, como no inicío quando quis implementar o Mailchimp.
+ </p>
+
+ <p>
+  Durante o processo de desenolvimento eu comprei e comecei a ler o livro SCRUM de Jeff & JJ Suntherland, o que me ajudou a priorizar e melhorar minha produtividade. Já que eu estabeleci uma meta de dias, e eu precisei focar no que era realmente preciso para entregar dentro desta meta, aliado ao fato de que eu defini dias, mas o tempo de desenvolvimento em cada dia foi dentre 1h a 4 horas em que eu realmente escrevia código. As técnicas de SCRUM  me ajudaram a utilizar melhor esse tempo.
+ </p>
+
+ <p>
+  No geral eu considerei o resultado satisfatório, apesar de ainda sentir necessidade de fazer alterações, mas valeu de uma experiência muito positiva. Agora é coletar os feedbacks da avaliação, redirecionar o roteiro de estudos e me preparar para melhorar esta versão atual.
+ </p>
+
+<br>
+ <img src="./assets/landinglight.png" alt="Exemplo de imagem" width="95%" height="600">
+
+## Depoimento dos dias de desenvolvimento
 <dl>
   <dt>Day 0</dt>
   <dd>Dei uma olhada no projeto ao todo e terminei colocando a estrutura inicial, header está posicionado mas os elementos estão com comportamentos errados</dd>
