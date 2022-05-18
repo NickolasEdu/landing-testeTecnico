@@ -29,7 +29,7 @@
   No geral eu considerei o resultado satisfatório, apesar de ainda sentir necessidade de fazer alterações, mas valeu de uma experiência muito positiva. Agora é coletar os feedbacks da avaliação, redirecionar o roteiro de estudos e me preparar para melhorar esta versão atual.
  </p>
 
-<br>
+## Relatório do LightHouse
  <img src="./assets/landinglight.png" alt="Exemplo de imagem" width="95%" height="600">
 
 ## Depoimento dos dias de desenvolvimento
